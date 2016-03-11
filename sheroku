@@ -44,6 +44,9 @@ class Sheroku
 			opts.on("-h", "--host [HOST]", "Specify hostname (e.g. proxy1.openredis.com)") do |host|
 				@options.host = host
 			end
+			opts.on("-p", "--port [PORT]", "Specify a port number (e.g. 234)") do |port|
+				@options.port = port
+			end
 			opts.on("-e", "--eval [EVALSTRING]", "Evaluate a command and exit") do |eval|
 				@options.eval = eval
 			end
